@@ -3,16 +3,16 @@
 Manage repos in varying version control systems with ease through a common
 interface.
 
-[![Linux Tests](https://github.com/Masterminds/vcs/actions/workflows/linux-tests.yaml/badge.svg)](https://github.com/Masterminds/vcs/actions/workflows/linux-tests.yaml) [![Go Report Card](https://goreportcard.com/badge/github.com/Masterminds/vcs)](https://goreportcard.com/report/github.com/Masterminds/vcs)
-[![Windows Tests](https://github.com/Masterminds/vcs/actions/workflows/windows-tests.yaml/badge.svg)](https://github.com/Masterminds/vcs/actions/workflows/windows-tests.yaml) [![Docs](https://img.shields.io/static/v1?label=docs&message=reference&color=blue)](https://pkg.go.dev/github.com/Masterminds/vcs)
+[![Linux Tests](https://github.com/bruceauyeung/vcs/actions/workflows/linux-tests.yaml/badge.svg)](https://github.com/bruceauyeung/vcs/actions/workflows/linux-tests.yaml) [![Go Report Card](https://goreportcard.com/badge/github.com/bruceauyeung/vcs)](https://goreportcard.com/report/github.com/bruceauyeung/vcs)
+[![Windows Tests](https://github.com/bruceauyeung/vcs/actions/workflows/windows-tests.yaml/badge.svg)](https://github.com/bruceauyeung/vcs/actions/workflows/windows-tests.yaml) [![Docs](https://img.shields.io/static/v1?label=docs&message=reference&color=blue)](https://pkg.go.dev/github.com/bruceauyeung/vcs)
 
-**Note: Module names are case sensitive. Please be sure to use `github.com/Masterminds/vcs` with the capital M.**
+**Note: Module names are case sensitive. Please be sure to use `github.com/bruceauyeung/vcs` with the capital M.**
 
 ## Quick Usage
 
 Quick usage:
 
-	remote := "https://github.com/Masterminds/vcs"
+	remote := "https://github.com/bruceauyeung/vcs"
     local, _ := ioutil.TempDir("", "go-vcs")
     repo, err := NewRepo(remote, local)
 
@@ -37,7 +37,7 @@ The constructors have the same signature as `NewRepo`.
 - Check if a string value is a valid reference within the VCS.
 - More...
 
-For more details see [the documentation](https://godoc.org/github.com/Masterminds/vcs).
+For more details see [the documentation](https://godoc.org/github.com/bruceauyeung/vcs).
 
 ## Motivation
 

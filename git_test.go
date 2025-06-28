@@ -29,7 +29,7 @@ func TestGit(t *testing.T) {
 		}
 	}()
 
-	repo, err := NewGitRepo("https://github.com/Masterminds/VCSTestRepo", tempDir+"/VCSTestRepo")
+	repo, err := NewGitRepo("https://github.com/bruceauyeung/vcsTestRepo", tempDir+"/VCSTestRepo")
 	if err != nil {
 		t.Error(err)
 	}
@@ -39,7 +39,7 @@ func TestGit(t *testing.T) {
 	}
 
 	// Check the basic getters.
-	if repo.Remote() != "https://github.com/Masterminds/VCSTestRepo" {
+	if repo.Remote() != "https://github.com/bruceauyeung/vcsTestRepo" {
 		t.Error("Remote not set properly")
 	}
 	if repo.LocalPath() != tempDir+"/VCSTestRepo" {
@@ -70,7 +70,7 @@ func TestGit(t *testing.T) {
 
 	// Test NewRepo on existing checkout. This should simply provide a working
 	// instance without error based on looking at the local directory.
-	nrepo, nrerr := NewRepo("https://github.com/Masterminds/VCSTestRepo", tempDir+"/VCSTestRepo")
+	nrepo, nrerr := NewRepo("https://github.com/bruceauyeung/vcsTestRepo", tempDir+"/VCSTestRepo")
 	if nrerr != nil {
 		t.Error(nrerr)
 	}
@@ -291,7 +291,7 @@ func TestGitCheckLocal(t *testing.T) {
 
 	// Test NewRepo when there's no local. This should simply provide a working
 	// instance without error based on looking at the remote localtion.
-	_, nrerr := NewRepo("https://github.com/Masterminds/VCSTestRepo", tempDir+"/VCSTestRepo")
+	_, nrerr := NewRepo("https://github.com/bruceauyeung/vcsTestRepo", tempDir+"/VCSTestRepo")
 	if nrerr != nil {
 		t.Error(nrerr)
 	}
@@ -309,7 +309,7 @@ func TestGitPing(t *testing.T) {
 		}
 	}()
 
-	repo, err := NewGitRepo("https://github.com/Masterminds/VCSTestRepo", tempDir)
+	repo, err := NewGitRepo("https://github.com/bruceauyeung/vcsTestRepo", tempDir)
 	if err != nil {
 		t.Error(err)
 	}
